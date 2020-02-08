@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\namesection{}{Nihar Gupte}{ 
+\noindent
+\faMobile: {(682) 552-6513} \hspace{2mm}
+\faEnvelope:{\href{mailto:nihargupte2008@gmail.com}{ nihargupte2008@gmail.com}} \hspace{2mm}
+\faGithub: {\href{https://github.com/iamNihar07}{iamNihar07}} \hspace{2mm}
+\faLinkedin: {\href{https://www.linkedin.com/in/iamnihar/}{iamNihar} }
+
+%\begin{tabularx}{\linewidth}{@{}lXl@{}}
+%\textit{Phone: (682)-552-6513}  & & Github:  \hspace{4.5mm}\href{https://github.com/iamNihar07}{iamNihar07}  \\
+%\href{mailto:nihargupte2008@gmail.com}{Email: \hspace{0.5mm} nihargupte2008@gmail.com}  && LinkedIn: \hspace{1mm}\href{https://www.linkedin.com/in/iamnihar}{iamnihar}  
+%\end{tabularx}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\large{
+\section{\huge {\bf Skills}}
+\subsection{Programming}
+\hspace{5mm}Proficient: \\
+\hspace*{15mm}Java, \hspace{1mm}C\\
+\hspace*{5mm}Intermediate: \\
+\hspace*{15mm}C++, \hspace{1mm}mySQL\\
+\hspace*{15mm}HTML, \hspace{1mm}CSS\\
+\hspace*{15mm}MATLAB\\
+\hspace*{5mm}Beginner: \\
+\hspace*{15mm}Bootstrap, \hspace{1mm}PHP
+\sectionsep
+
+
+\subsection{OPERATING SYSTEMS} \hspace{5mm}Linux Ubuntu, \hspace{1mm}Windows 
+\sectionsep
+
+\subsection{Version Control}
+\hspace{5mm}git, \hspace{1mm} GitHub
+\sectionsep
+
+\subsection{Other Tools}
+\hspace*{5mm}g++,\hspace{1mm} valgrind,
+\hspace{1mm}gdb,\hspace{1mm} VSCode\\
+\hspace*{5mm}phpMyAdmin,\hspace{1mm} HeidiSQL\\
+\hspace*{5mm}MS Office,\hspace{1mm} Sublime Text
+\sectionsep
+
+\subsection{Networking}
+\hspace*{5mm}OSI Model,\hspace{1mm} IP,
+\hspace{1mm}TCP\\
+\hspace*{5mm}MAC,\hspace{1mm} ARP,\hspace{1mm} DNS\\
+\hspace*{5mm}DNS,\hspace{1mm} FQN,\hspace{1mm} DHCP
+\sectionsep
+
+\subsection{Development \\ Methodologies}
+\hspace{5mm}Agile,\hspace{1mm}Waterfall,\hspace{1mm}Scrum
+
+\sectionsep
+
+}
+
+
+
+
+
+% Involvement
+\vspace{2mm}
+\section{\huge {\bf Involvement}} 
+\runsubsection{Student Government}\\
+\descript{\large Senator} \\
+ \large  Elected to represent over 7,000 students of the College of Engineering at UT Arlington. Discussed, passed and voted on resolutions affecting over 40,000 students at UTA.
+ 
+\sectionsep
+
+\runsubsection{UTA Volunteers}\\
+ \large Volunteered for social and noble causes for about 20 hours a semester.
+
+\sectionsep
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{\huge {\bf Education}} 
+\subsection{Bachelor of Science in Computer Science}
+\descript{\large University of Texas At Arlington}
+{\large Expected Graduation: May 2021 \\ 
+Minor: \hspace{2mm}Mathematics\\
+GPA: \hspace{2mm}4.00 \hspace{5mm} Dean's List (Fall '18, Spring '19, Fall '19)\\
+
+}
+\sectionsep
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     ACADEMIC PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{6.25mm}
+\section{\huge {\bf Projects }}
+
+
+\runsubsection{Mav Shell} \hfill{\location{\large 08/2019 - 12/2019 }}
+ \large{\begin{itemize}[nolistsep, noitemsep]
+            \item Developed and facilitated a customized Shell command line interface to execute all major scripting commands
+            \item Utilized the functionality of fork and exec and handled multiple processes in C
+        \end{itemize}
+ }
+\sectionsep
+
+\runsubsection{SuperChat} \hfill{\location{\large 01/2019 - 05/2019 }}
+ \large{\begin{itemize}[nolistsep, noitemsep]
+            \item Built and handled a Linux based local client chatting messenger using ASIO network protocols and Ncurses GUI in C
+            \item Implemented the functionality to chat with 50 users with spellcheck, chatrooms and private messaging
+        \end{itemize}
+ 
+ }
+\sectionsep
+
+\runsubsection{MICE: Maverick Ice Cream Emporium} \hfill{\location{\large 01/2018 - 05/2018 }}
+ \large{\begin{itemize}[nolistsep, noitemsep]
+            \item Designed and delivered a customized POS system for an ice cream shop using Object Oriented Programming C++
+            \item Implemented the ability to place or cancel an order, generate reports, and manage inventories to handle a restaurant’s real time operations in a GUI interface using GTKMM library
+        \end{itemize}
+ 
+ }
+\sectionsep
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{\huge {\bf Experience}}
+
+
+\runsubsection{Resident Assistant}
+\hfill{\location{\large 08/2019 - Present}}
+\descript{\large University of Texas at Arlington}
+\large {\begin{itemize}[nolistsep, noitemsep]
+            %\setlength{\itemsep}{-3pt}
+            \item Serve as a Role model and Leader for residential students, responsible for the welfare of around 1400 students
+            \item Develop personal relationships with 70 residents to build community and enhance on-campus involvement
+            \item Organize social, academic, personal welfare and diverse programs and events for student residents
+        \end{itemize}
+}
+\sectionsep
+
+\runsubsection{Office Assistant}
+\hfill{\location{\large 08/2018 – 08/2019 }}
+\descript{\large University of Texas at Arlington }
+\large{\begin{itemize}[nolistsep, noitemsep]
+            %\setlength{\itemsep}{-3pt}
+            \item Facilitated general administration of a residential hall housing about 250 students
+            \item Directed students, parents, staff, and visitors with appropriate campus resources
+        \end{itemize}
+}
+\sectionsep
+
+
+%\runsubsection{Grading Assistant}
+%\hfill{\location{\large 08/2018 – 05/2019 }}
+%\descript{\large University of Texas at Arlington }
+%\large{\begin{itemize}[nolistsep, noitemsep]
+%            %\setlength{\itemsep}{-3pt}
+%            \item Graded hardcopy and MATLAB coding assignments of %over 100 freshman engineering students (Course: ENGR-1250)
+%            \item Proctored midterms and final examinations and %guided students with general engineering physics
+%       \end{itemize}
+%}
+%\sectionsep
+
+
+
+
+\end{minipage} 
+
+\section{\huge {\bf Academic Coursework}}
+
+
+\descript{Computer Network Organization\hspace{5mm}Database Systems and File Structures\hspace{5mm}Operating Systems\hspace{5mm}Algorithms and Data Structures\hspace{5mm}Fundamentals of Software Engineering\hspace{5mm}OOPs}
+\end{document}
